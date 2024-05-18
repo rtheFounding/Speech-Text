@@ -27,3 +27,34 @@ window.onload = function() {
         console.log('Error occurred in recognition: ' + event.error);
     };
 };
+
+
+// window.onload = function() {
+//     var recognition = new webkitSpeechRecognition();
+//     recognition.continuous = true;
+//     recognition.interimResults = true;
+
+//     var startBtn = document.getElementById('start-btn');
+//     var stopBtn = document.getElementById('stop-btn');
+//     var chatInput = document.getElementById('chat-input');
+
+//     startBtn.onclick = function() {
+//         recognition.start();
+//     };
+
+//     stopBtn.onclick = function() {
+//         recognition.stop();
+//     };
+
+//     recognition.onresult = function(event) {
+//         var transcript = '';
+//         for (var i = event.resultIndex; i < event.results.length; ++i) {
+//             transcript += event.results[i][0].transcript;
+//         }
+//         chatInput.value = transcript;
+//     };
+
+//     recognition.onerror = function(event) {
+//         console.log('Error occurred in recognition: ' + event.error);
+//     };
+// };
